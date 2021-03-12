@@ -1,0 +1,23 @@
+.section_h1 {
+  background: url('../img/LittleLinds.png');
+  padding-bottom: 30px;
+  height: 73vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  .decorativeH1 {
+    background: yellow;
+    line-height: 1.25;
+    width: 50%;
+    margin-left: 46%;
+    padding: 25px;
+    
+    h1 {
+      margin-bottom: 0;
+      font-size: 3rem;
+      padding-bottom: 25px;
+    }
+  }
+  
+}
+

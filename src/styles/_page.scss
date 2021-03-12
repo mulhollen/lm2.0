@@ -1,0 +1,529 @@
+h1 {
+  font-family: $displayFont;
+}
+
+h2 {
+  font-family: $displayFont;
+}
+
+h3 {
+  font-family: $displayFont
+}
+
+p {
+  font-family: $pFont;
+}
+
+// .nunito {
+//   font-family: 'Nunito', sans-serif;
+// }
+
+.sans {
+  font-family: 'Work Sans', monospace;  
+}
+
+/* Nav / Navlinks / links */
+
+nav {
+  padding: 0 3rem;
+}
+
+/* logo */
+.logo {
+height: 4rem;
+background: url('../img/lmlogostill.png');
+}
+
+/*this is the hover event trigger*/
+.logo:hover {
+  cursor:pointer; 
+  background:url('../img/lmlogo.gif');
+}
+
+a,
+a:link,
+a:visited,
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+font-family: 'Nunito', sans-serif;  
+color: #000;
+}
+
+.portLink {
+  text-decoration: none !important;
+}
+
+.active,
+.nav-link:active {
+  color: #000;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+a:hover,
+.nav-link:hover {
+  color: black;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+#home-logo:hover ,
+#home-logo:active {
+  color: black;
+  text-decoration: none;
+}
+/* end Nav / Navlinks / links */
+
+
+/* home */
+
+.mainH1 {
+  font-family: 'Nunito', sans-serif;  
+  color: #000;
+  margin: 22vh 15%;
+  padding: 3rem;
+}
+
+.h1JS {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+.displayFont {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.boxshadow /* for the nav */ {
+ border-bottom: 10px solid black;
+}
+
+.lilNav {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* end home */
+
+
+/* individual portfolio page */
+
+.portH1 /* portofolio h1 */ {
+  font-family: 'Nunito', sans-serif;  
+  background-color: yellow;
+}
+
+.bodyWidth {
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.port-h1 {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  margin-top: -10%;
+  margin-bottom: 5%;
+  border: 5px black solid;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.portPic{
+  object-fit: contain;
+  height: 40vw;
+}
+
+.flip {
+  flex-direction: row;
+}
+
+ /* Video */  
+  video {
+  background-color: white;
+  background-position: center center;
+  background-size: contain;
+}
+/* end individual portfolio page */
+
+/* Resume Page */
+/* for Resume and embedding it */
+.resumeWidth {
+  width: 75%;
+  margin-left:auto;
+  margin-right:auto;
+  object-fit: scale-down;
+}
+
+/* end Resume Page */
+
+/* About Page */
+
+.aboutWidth {
+  width: 39%;
+  margin-left: 3rem;
+}
+
+.about-div {
+  flex-direction: row;
+}
+/* End About Page */
+
+/*  */
+/*  */
+/*  */
+
+/* verbose css */
+
+/* main h1 */
+.animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #000000;
+}
+.animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: #000000;
+}
+.animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: #000000;
+}
+.animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: #000000;
+}
+.animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: #000000;
+}
+
+.animated-words span {
+    position: absolute;
+    margin-left: 1rem;
+    opacity: 0;
+    overflow: hidden;
+    color: #000000;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+}
+
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* end main h1 */
+
+
+
+/* hover styling for portfolio compilation*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  font-family: 'Nunito', sans-serif;    
+  /* text-transform: uppercase; */
+  text-align: left;
+  position: relative;
+  font-size: 4rem;
+  word-wrap: break-word;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  text-align: right;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* end hover styling for portfolio compilation*/
+
+
+
+/* media queries */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+  .hovereffect h2 {
+    font-size: 1rem;
+  }
+
+  .displayFont {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+}
+.displayFontH1 {
+  padding-top: .5rem;
+}
+
+  .lilNav{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutWidth {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 3rem;
+  }
+
+  .about-div {
+    flex-direction: column-reverse;
+  }
+
+  .pic-center {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+  }
+
+  nav {
+  padding: 0;
+  }
+
+  .mainH1 {
+  font-family: 'Nunito', sans-serif;  
+  color: #000;
+  margin: 22vh 1rem;
+  padding: 0;
+  }
+
+  .h1JS {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    padding: 0 .5rem 2.5rem .5rem;
+  }
+
+  .animated-words span {
+  margin-left: 0;
+  }
+
+.flip{
+  flex-direction: column;
+}
+
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+  .hovereffect h2 {
+    font-size: 1rem;
+  }
+
+  .displayFont {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.displayFontH1 {
+  padding-top: .5rem;
+}
+
+  .lilNav{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutWidth {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 3rem;
+  }
+
+  .about-div {
+    flex-direction: column-reverse;
+  }
+
+  .pic-center {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+  }
+  
+  nav {
+  padding: 0;
+  }
+
+  .mainH1 {
+  font-family: 'Nunito', sans-serif;  
+  color: #000;
+  margin: 22vh 1rem;
+  padding: 0;
+  }
+
+  .h1JS {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    padding: 0 .5rem 2.5rem .5rem;
+  }
+
+  .animated-words span {
+  margin-left: 0;
+  }
+
+  .flip{
+  flex-direction: column;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  .hovereffect h2 {
+    font-size: 3rem;
+  }
+  
+  .displayFont {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.displayFontH1 {
+  padding-top: .5rem;
+}
+
+.aboutWidth {
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-left: 0;
+}
+
+.about-div {
+  flex-direction: column-reverse;
+}
+
+.pic-center {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+
+nav {
+  padding: 0;
+}
+
+
+.mainH1 {
+  font-family: 'Nunito', sans-serif;  
+  color: #000;
+  margin: 22vh 1rem;
+  padding: 0;
+}
+
+.h1JS {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  padding: 0 .5rem 2.5rem .5rem;
+}
+
+.animated-words span{
+  margin-left: 0;
+}
+
+.flip{
+  flex-direction: column;
+}
+
+}
