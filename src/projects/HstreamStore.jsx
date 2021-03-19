@@ -1,7 +1,9 @@
 import React from "react";
 import Video from '../shared/Video';
-import Original from "../img/hStreamStore/hstream_original.png"
-import CovidBanner from "../img/hStreamStore/home_banner_covid.png"
+import Original from "../img/hStreamStore/OldStore.png";
+import CovidBanner from "../img/hStreamStore/CovidBannerDesktop.png";
+import CourseTabs from "../img/hStreamStore/CourseTabsLaptop.png";
+import Faq from "../img/hStreamStore/faq_laptop.png"
 
 const HstreamStore = () => {
   return (
@@ -12,62 +14,66 @@ const HstreamStore = () => {
           <h3 className="m-5">Modern React update enabling B2B and B2C transactions of courses in continuing healthcare education. Utilizing headless CMS Znode, I worked as one of two React developers architecting and building the site over a four-month zero-to-release period.</h3>
         </div>
         <div className="bodyWidth d-flex justify-content-center yellow mb-3 mx-auto flip">
-          <div>
-            <h3 className="px-5 pt-5">meet hStream 1.0</h3>
+          <div className="widthBlock-50">
+            <h3 className="px-5 pt-5">meet hStream Store 1.0</h3>
             <p className="px-5 py-3">
-              This is the challenge
-            <br /><br />
-              This is what we did
+              We had the opportunity to give users an up-to-date, intuitive, and responsive way to look for continuing healthcare education. Healthstream is a major provider for training for healthcare organizations throughout the United States. Our challenge was to build a product that would be instinctual for a group of existing users who do not often find themselves at the computer.
+              <br /><br />
+              Much like trying to find something to watch, switching between streaming service and streaming service, finding healthcare continuing education courses can be cumbersome and overwhelming when trying to make the right choice. We wanted to make sure our update made users feel empowered that they made a good choice.
             </p>
           </div>
-          <img className="pl-0 portPic" src={Original} alt="" />
+          <img className="p-0 cover widthBlock-50" src={Original} alt="" />
         </div>
-        <div className="bodyWidth p-5 my-5 border border-dark">
-          <div>
-            <h3 className="mb-4">the tech stack:</h3>
-            <ul className="px-5 py-3">
-                  <li>Create an engaging and interactive way for the user to experience and understand art.</li>
-                  <li>Design a storybook style app that allows the user to be engaged in a linear way and not to feel like they are just reading the museum placards.</li>
-                  <li>Foster realitibly and interactibility for the user to feel like they are a part of the process using relatibility as a way to create solid foundations for learning and emotional intelligence.</li>
-                  <li>Build activities to engage users and eliminate monotony fatigue, allowing the user to focus on and digest the exhibit.</li>
-                  <li>Produce genuine interaction points between primary users and their guardians that teach vocabulary, emotional intelligence, and art.</li>
-              </ul>
-          </div>
+        <div className="bodyWidth my-5 mx-auto d-flex justify-content-center">
+          <img className="w-100" src={CovidBanner} alt="" />
         </div>
         <div className="bodyWidth d-flex justify-content-center yellow flip my-3 mx-auto">
-          <img className="pl-0 portPic" src={CovidBanner} alt="" />
-          <div>
-              <h3 className="px-5 pt-5">user focused goals:</h3>
+          <img className="pl-0 cover widthBlock-50" src={CourseTabs} alt="" />
+          <div className="widthBlock-50">
+              <h3 className="px-5 pt-5">the code:</h3>
               <p className="px-5 py-3">
-                This is the challenge
+                The Project is a React App utilizing the React Context API and React Hooks. The base of the app is built to be a boilerplate for future React projects; including the Airbnb style guide, Eslint, and Prettier, Enzyme and Jest testing, and OAuth through an in-company service. 
                 <br /><br />
-                This is what we did
+                The app itself was built to focus on a desktop view, but allow a tablet or mobile experience; features not available in the previous version of the store. The components were designed to be reused throughout a component library and documented through Storybook.
+                <br /><br />
+                Collaborating with a senior contractor and back-end staff, we were able to rapidly build out an app that includes a variable shopping experience based on API held offerings, search with robust filtering, space for marketing to highlight content, and an authenticated in-app checkout experience.
+                <br /><br />
+                The app was launched March of 2020 with a condensed added sprint to allot for free courses so we could offer Covid-19 training content on launch.
             </p>
           </div>
         </div>
         <div className="bodyWidth p-5 my-5 border border-dark">
           <div>
-            <h3 className="mb-4">the code:</h3>
-            <p className="px-5 py-3">
-                Art, especially gallery art and museum art, can be hard to digest and alienating for children. The goal of Art Investigator is to make museum art understandable, relatable, and fun for children at an early reading age (7-11 years old). The challenge was creating a learning based app that grows emotional intelligence, relates children to the artist, and creates interaction points for parents and their children without overwhelming the exhibit itself.<br /><br />
-                Working with Early Childhood Education Teacher, Rebecca Sacramone, and K-12 Education Technology Professional of The Cleveland Institute of Music, Heather Young Mandujano, a lesson plan focusing on Nick Cave, his wide range of artistic mediums, and the related emotional intelligence of vulnerability was developed. Working with Adventure Science Center designer Jim Savelyev, interaction points for parents and their children were constructed.
-            </p>
-          </div>
-        </div>
-        <div className="bodyWidth d-flex justify-content-center yellow flip my-3 mx-auto">
-          {/* <img className="pl-0 portPic" src={search} alt="" /> */}
-          <div>
-            <h3 className="px-5 pt-5">lessons learned:</h3>
+            <h3 className="mb-4">lessons learned:</h3>
             <ul className="px-5 py-3">
-                <li>Create an engaging and interactive way for the user to experience and understand art.</li>
-                <li>Design a storybook style app that allows the user to be engaged in a linear way and not to feel like they are just reading the museum placards.</li>
-                <li>Foster realitibly and interactibility for the user to feel like they are a part of the process using relatibility as a way to create solid foundations for learning and emotional intelligence.</li>
-                <li>Build activities to engage users and eliminate monotony fatigue, allowing the user to focus on and digest the exhibit.</li>
-                <li>Produce genuine interaction points between primary users and their guardians that teach vocabulary, emotional intelligence, and art.</li>
+              <li>Creating streamlined components for reuse can only save you time to a point. Don’t sink your costs when it would be quicker to rewrite.</li>
+              <li>Sometimes no one knows the answer to the ticket you’re assigned and not knowing how to solve something from the start is okay and happens to everyone.</li>
+              <li>It’s really fun to make a product that makes things better for the user.</li>
+              <li>Every "out of the box" CMS has a downside.</li>
+              <li>React Context takes a tiny fraction of the time to learn in comparison to Redux - or maybe it was just much easier once you’ve used Redux. </li>   
             </ul>
           </div>
         </div>
-        {/* <img className="w-100 mt-5" src={liv} alt="" /> */}
+        <div className="bodyWidth d-flex justify-content-center yellow flip my-3 mx-auto">
+          <div className="pl-5 widthBlock-50">
+            <h3 className="pt-5 mb-4">the tech stack:</h3>
+            <ul className="px-5 py-3">
+              <li>React</li>
+              <li>React Context API</li>
+              <li>React Hooks</li>
+              <li>Sass</li>
+              <li>Airbnb Styleguide</li>
+              <li>Prettier</li>
+              <li>ESLint</li>
+              <li>Enzyme</li>
+              <li>Jest</li>
+              <li>Reactstrap</li>
+              <li>Bootstrap</li>
+              <li>Znode</li>
+            </ul>
+          </div>
+          <img className="p-0 cover widthBlock-50" src={Faq} alt="Laptop open to store with FAQ section visible to user" />
+        </div>
       </div>
   );
 }

@@ -46,7 +46,7 @@ a:visited,
 .nav-link,
 .nav-link:link,
 .nav-link:visited {
-font-family: 'Nunito', sans-serif;  
+font-family: $displayFont;  
 color: #000;
 }
 
@@ -145,6 +145,13 @@ a:hover,
   flex-direction: row;
 }
 
+.cover {
+  object-fit: cover;
+}
+.widthBlock-50 {
+  width: 50%;
+}
+
  /* Video */  
   video {
   background-color: white;
@@ -173,6 +180,11 @@ a:hover,
 
 .about-div {
   flex-direction: row;
+}
+
+.icon-link svg {
+  width: 30px;
+  height: 30px;
 }
 /* End About Page */
 
@@ -258,8 +270,7 @@ a:hover,
   height: 80%;
   left: 10%;
   top: 10%;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
+  border-left: 6px solid yellow;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
@@ -288,12 +299,13 @@ a:hover,
   -webkit-filter: brightness(0.6);
 }
 
-.hovereffect h2 {
-  font-family: 'Nunito', sans-serif;    
+
+.hovereffect h3 {
+  font-family: $displayFont;    
   /* text-transform: uppercase; */
   text-align: left;
   position: relative;
-  font-size: 4rem;
+  font-size: 3.5rem;
   word-wrap: break-word;
   background-color: transparent;
   color: #FFF;
@@ -306,7 +318,7 @@ a:hover,
   transform: translate3d(0,-100%,0);
 }
 
-.hovereffect a, .hovereffect p {
+.hovereffect a, .hovereffect a h3 {
   text-align: right;
   color: #FFF;
   padding: 1em 0;
@@ -318,7 +330,7 @@ a:hover,
   transform: translate3d(0,100%,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover a h3 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
@@ -328,13 +340,12 @@ a:hover,
 /* end hover styling for portfolio compilation*/
 
 
-
 /* media queries */
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
 
-  .hovereffect h2 {
+  .hovereffect h3 {
     font-size: 1rem;
   }
 
@@ -467,7 +478,7 @@ a:hover,
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 900px) {
 
   .hovereffect h2 {
     font-size: 3rem;
@@ -526,4 +537,7 @@ nav {
   flex-direction: column;
 }
 
+.widthBlock-50 {
+  width: 100%;
+}
 }

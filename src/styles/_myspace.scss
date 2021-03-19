@@ -1,0 +1,131 @@
+$light-blue: #D6E7FD;
+$mid-blue: #B3D0EE;
+$dark-blue: #669ACA;
+$text-blue: #56709D;
+$link-blue: #314695;
+$text-background-blue: #D6E8FD;
+$orange: #FECC99;
+$text-orange: #E06E36;
+
+
+.myspace {
+  display: flex;
+
+  h1 {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  p {
+    font-size: .75rem;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  a, button {
+    font-family: sans-serif;
+    color: $link-blue;
+    font-weight: bold;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 0;
+
+    &:hover {
+      text-decoration: underline;
+      background-color: unset;
+    }
+  }
+
+  &__left {
+    width: 35%;
+  }
+
+  &__right {
+    width: 65%;
+  }
+
+  &__contact {
+    background-color: $dark-blue;
+    width: 100%
+
+    h3 {
+      color: #fff;
+    }
+
+    > div {
+      background-color: #fff;
+      border: 3px solid $dark-blue;
+    }
+  }
+  
+  &__url {
+    border: 1px solid $dark-blue;
+    padding: 2px;
+    width: 97%;
+  }
+
+  &__interests {
+    background-color: $dark-blue;
+    width: 100%
+
+    h3 {
+      color: #fff;
+    }
+
+    > div {
+      background-color: #fff;
+      border: 3px solid $dark-blue;
+    }
+
+    h4 {
+      background-color: $mid-blue;
+      color: $text-blue;
+      min-width: 30%;
+      font-size: .85rem;
+      font-weight: bold;
+    }
+
+    p {
+      background-color: $light-blue;
+      width: 100%
+    }
+  }
+
+  &__schools {
+
+    p:first-of-type {
+      width: 85%;
+
+      b {
+        color: $link-blue;
+      }
+    }
+   
+    p:last-of-type {
+      width: 15%
+    }
+  }
+
+  &__status {
+      border: 3px solid;
+  }
+}
+

@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
+import Myspace from "./components/Myspace";
 import ArtInverstigator from "./projects/ArtInvestigator";
 import EverythingHappens from "./projects/EverythingHappens";
 import Canvas from "./projects/Canvas";
@@ -28,6 +29,7 @@ function App() {
             <Route path='/About' component={About} />
             <Route path='/Portfolio' component={Portfolio} />
             <Route path='/Resume' component={Resume} />
+            <Route path='/Myspace' component={Myspace} />
             <Route path='/ArtInvestigator' component={ArtInverstigator} />
             <Route path='/EverythingHappens' component={EverythingHappens} />        
             <Route path='/Canvas' component={Canvas} />                                                
