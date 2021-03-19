@@ -10,7 +10,7 @@ const User = () => {
       <h2>Lindsay Mulhollen</h2>
       <div className="d-flex flex-column">
         <div className="d-flex mb-3">
-          <img src={lindsay} className="mr-3" alt="Lindsay as a small child lounging in front of a toy computer" />
+          <img src={lindsay} className="mr-3 profileimg" alt="Lindsay as a small child lounging in front of a toy computer" />
           <div className="d-flex flex-column">
             <div className="h-100 d-flex flex-column justify-content-between">
               <div>

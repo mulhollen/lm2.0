@@ -5,11 +5,19 @@ $text-blue: #56709D;
 $link-blue: #314695;
 $text-background-blue: #D6E8FD;
 $orange: #FECC99;
+$background-orange: #F9C66C;
 $text-orange: #E06E36;
 
+.myspaceHolder {
+  display: flex;
+  justify-content: center;
+  background-color: $background-orange;
+}
 
 .myspace {
   display: flex;
+  max-width: 1200px;
+  background-color: #fff;
 
   h1 {
     font-family: sans-serif;
@@ -31,10 +39,10 @@ $text-orange: #E06E36;
   }
 
   p {
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
-  img {
+  .profileimg {
     width: 200px;
     height: 200px;
   }
@@ -79,7 +87,7 @@ $text-orange: #E06E36;
   &__url {
     border: 1px solid $dark-blue;
     padding: 2px;
-    width: 97%;
+    width: 90%;
   }
 
   &__interests {
@@ -127,5 +135,62 @@ $text-orange: #E06E36;
   &__status {
       border: 3px solid;
   }
+
+  &__blurbs {
+    h3 {
+      color: $text-orange;
+      background-color: $orange;
+
+      a {
+        font-weight: normal;
+        font-size: .85rem;
+      }
+    }
+
+    h4 {
+      color: $text-orange;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &--topdiv {
+      max-width: 100%;
+
+      a {
+        max-width: 25%;
+        width: 25%;
+
+        h4{
+          color: gray;
+        }
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &--comment {
+      div:first-of-type {
+        width: 30%;
+        background-color: $background-orange;
+        
+        h4 {
+          color: $link-blue;
+        }
+      }
+
+      div:last-of-type {
+        width: 70%;
+        background-color: $orange;
+      }
+    }
+    
+    &--shortLineHeight {
+      line-height: .5rem;
+    }
+  }
+
 }
 

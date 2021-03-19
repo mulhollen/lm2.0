@@ -1,6 +1,8 @@
 import React from 'react';
 import lindsay from '../img/LittleLinds.png';
+import myspace from '../img/myspaceIcon.png';
 import emojis from 'emojis-list';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -19,6 +21,7 @@ const About = () => {
             <a href={`mailto:lindsaymulhollen@gmail.com`} className="mr-3 icon-link"><Envelope /></a>
             <a href="https://www.linkedin.com/in/mulhollen/" target="_blank" rel="noreferrer" className="mr-3 icon-link"><LinkedIn /></a>
             <a href="https://github.com/mulhollen" target="_blank" rel="noreferrer" className="mr-3 icon-link"><Github /></a>
+            <Link to="/Myspace" className="mr-3 icon-link"><img src={myspace} alt="myspace icon" /></Link>
           </div>
         </div>
       </div>
