@@ -3,10 +3,14 @@ import lindsay from '../img/LittleLinds.png';
 import myspace from '../img/myspaceIcon.png';
 import emojis from 'emojis-list';
 import { Link } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 const About = () => {
   return (
     <div className="about bodyWidth d-flex justify-content-center mt-5 about-div">
+      <Helmet>
+        <title>LM | About</title>
+      </Helmet>
       <img src={lindsay} className="widthBlock-50" alt="Lindsay as a small child lounging in front of a toy computer" />
       <div className="aboutWidth">
         <h1 className="mb-4 nunito">It's ya girl {emojis[1244]}</h1>

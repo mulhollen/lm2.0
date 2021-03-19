@@ -8,10 +8,14 @@ import Status from './parts/Status'
 import Blurbs from './parts/Blurbs';
 import Top8 from './parts/Top8';
 import Comments from './parts/Comments';
+import { Helmet } from "react-helmet";
 
 const Myspace = () => {
   return (
     <div className="myspaceHolder">
+      <Helmet>
+        <title>LM | LindsSpace</title>
+      </Helmet>
       <section className="myspace">
         <div className="myspace__left">
           <User />

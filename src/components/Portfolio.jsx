@@ -6,10 +6,15 @@ import CanvasImg from '../img/Canvas/Canvas.png';
 import EverythingHappens from '../img/EverythingHappens/EHsquare.jpg';
 import Hstream from '../img/hStreamStore/CovidBannerLaptop.png';
 import Squiggle from '../img/squiggleline.png';
+import { Helmet } from "react-helmet";
+
 
 const Portfolio = () => {
   return (
     <div className="bodyWidth">
+      <Helmet>
+        <title>LM | Portfolio</title>
+      </Helmet>
       <h1 className="text-center nunito my-5">{emojis[1475]} here's what I've been working on:</h1>
       <div className="portfolioContent">
         <Link className="portLink" to='/HstreamStore'>
