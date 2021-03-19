@@ -30,6 +30,12 @@ const Details = () => {
             </p>
           </div>
           <div className="d-flex mx-1 mb-1">
+            <h4 className="m-0 mr-1 p-1">Enneagram:</h4>
+            <p className="m-0 p-1">
+              7
+            </p>
+          </div>
+          <div className="d-flex mx-1 mb-1">
             <h4 className="m-0 mr-1 p-1">Education:</h4>
             <p className="m-0 p-1">
               Undergraduate/Professional Program

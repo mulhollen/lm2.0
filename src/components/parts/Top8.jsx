@@ -9,7 +9,7 @@ const Top8 = () => {
   return (
     <div className="myspace__blurbs mb-4">
       <h3 className="m-0 mb-3 p-1 px-3 w-100 d-flex justify-content-between align-items-center">
-        Lindsay's Friend Space
+        Lindsay's Friend Space (Top 4)
         <Link to="/Portfolio">[view all]</Link>  
       </h3>
       <div className="pl-3">

@@ -3,7 +3,7 @@ import React from 'react';
 const Interests = () => {
   return (
     <div className="myspace__interests myspace__schools mb-4 mx-3">
-      <h3 className="mb-0 pt-1 text-light">Lindsay's Interests</h3>
+      <h3 className="mb-0 pt-1 text-light">Lindsay's Schools</h3>
       <div className="d-flex flex-column pt-1">
           <div className="d-flex mx-1 mb-1">
             <p className="m-0 mr-1 p-1 pb-4">

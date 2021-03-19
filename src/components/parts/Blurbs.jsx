@@ -11,10 +11,6 @@ const Blurbs = () => {
           I'm excited to bring my unique background to the development world where I plan to make my mark with innovative thinking and motivation to tackle even the most unthinkable projects.
         </p>
       </div>
-      <div className="pl-3">
-        <h4 className="mb-0">Who I'd like to meet:</h4>
-        <p></p>
-      </div>
     </div>
   );
 }
