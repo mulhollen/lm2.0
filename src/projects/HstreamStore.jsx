@@ -4,6 +4,7 @@ import Original from "../img/hStreamStore/OldStore.png";
 import CovidBanner from "../img/hStreamStore/CovidBannerDesktop.png";
 import CourseTabs from "../img/hStreamStore/CourseTabsLaptop.png";
 import Faq from "../img/hStreamStore/faq_laptop.png"
+import OtherProjects from "../shared/OtherProjects";
 
 const HstreamStore = () => {
   return (
@@ -74,6 +75,7 @@ const HstreamStore = () => {
           </div>
           <img className="p-0 cover widthBlock-50" src={Faq} alt="Laptop open to store with FAQ section visible to user" />
         </div>
+        <OtherProjects current="hStreamStore" />
       </div>
   );
 }

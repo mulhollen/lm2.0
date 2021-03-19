@@ -3,7 +3,7 @@ import lindsay from '../img/LittleLinds.png';
 import myspace from '../img/myspaceIcon.png';
 import emojis from 'emojis-list';
 import { Link } from 'react-router-dom';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (

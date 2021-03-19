@@ -2,6 +2,7 @@ import React from 'react';
 import sid from '../img/Canvas/persona.jpeg';
 import wall from '../img/Canvas/artlens.JPG';
 import main from '../img/Canvas/CanvasCrop.png';
+import OtherProjects from "../shared/OtherProjects";
 
 const Canvas = () => {
   return (
@@ -82,6 +83,7 @@ const Canvas = () => {
         </div>
       </div>
       <img className="w-100 mt-5" src={sid} alt="" />
+      <OtherProjects current="Canvas" />
     </div>
   );
 }

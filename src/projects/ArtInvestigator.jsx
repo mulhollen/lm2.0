@@ -4,6 +4,7 @@ import liv from '../img/ArtInvestigator/liv_app_2.jpg';
 import challenge from '../img/ArtInvestigator/challenge.jpg';
 import search from '../img/ArtInvestigator/search.jpg';
 import soundsuit from '../img/ArtInvestigator/soundsuit-square.jpg';
+import OtherProjects from "../shared/OtherProjects";
 
 const ArtInvestigator = () => {
   return (
@@ -89,6 +90,7 @@ const ArtInvestigator = () => {
           </div>
         </div>
         <img className="w-100 mt-5" src={liv} alt="" />
+        <OtherProjects current="ArtInvestigator" />
       </div>
     );
 }

@@ -3,6 +3,7 @@ import main from '../img/EverythingHappens/kristen.jpg';
 import interview from '../img/EverythingHappens/interview.png';
 import ellyn from '../img/EverythingHappens/Single.jpg';
 import trio from '../img/EverythingHappens/Trio.jpg';
+import OtherProjects from "../shared/OtherProjects";
 
 const EverythingHappens = () => {
   return (
@@ -54,6 +55,7 @@ const EverythingHappens = () => {
         <div><iframe title="Everything Happens Live Video" src="https://player.vimeo.com/video/44778305?title=0&byline=0&portrait=0"></iframe></div>
       </div>
       <img className="w-100 mt-5" src={trio} alt="" />
+      <OtherProjects current="EverythingHappens" />
     </div>
   );
 }
