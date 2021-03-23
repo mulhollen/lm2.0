@@ -9,6 +9,7 @@ import Blurbs from './parts/Blurbs';
 import Top8 from './parts/Top8';
 import Comments from './parts/Comments';
 import { Helmet } from "react-helmet";
+import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react/cjs/react.production.min';
 
 const Myspace = () => {
   return (
@@ -16,11 +17,14 @@ const Myspace = () => {
       <Helmet>
         <title>LM | LindsSpace</title>
       </Helmet>
-      <section className="myspace">
+      <section className="myspace flip">
         <div className="myspace__left">
           <User />
           <Contact />
-          <div className="myspace__url mb-3 mx-3">
+          <div className="mobile-only">
+            <Blurbs />
+          </div>
+          <div className="myspace__url desktop-only mb-3 mx-3">
             <p className="m-0"><b>Myspace Url:</b></p>
             <p className="pl-2 m-0">http://www.lindsaymulholen.com/myspace</p>
           </div>
@@ -29,8 +33,12 @@ const Myspace = () => {
           <Schools />
         </div>
         <div className="myspace__right px-4">
-          <Status />
-          <Blurbs />
+          <div className="desktop-only">
+            <Status />
+          </div>
+          <div className="desktop-only">
+            <Blurbs />
+          </div>
           <Top8 />
           <Comments />
         </div>

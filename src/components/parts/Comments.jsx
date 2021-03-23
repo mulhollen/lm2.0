@@ -19,7 +19,7 @@ const Comments = () => {
         )</b></p>
       </div>
       <div className="px-3 d-flex w-100 myspace__blurbs--topdiv justify-content-between">
-        <div className="d-flex myspace__blurbs--comment mb-1 ">
+        <div className="d-flex myspace__blurbs--comment mb-1 flip-small">
           <div className="p-1 mr-1 d-flex flex-column align-items-center">
             <h4>HealthStream Colleague</h4>
             <img className="m-1" src={hslogo} alt=" " />

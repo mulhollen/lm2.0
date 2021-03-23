@@ -1,15 +1,15 @@
 .section_h1 {
   background: url('../img/LittleLinds.png');
   padding-bottom: 30px;
-  height: 73vh;
+  min-height: 73vh;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: right;
   
   .decorativeH1 {
     background: yellow;
     line-height: 1.25;
     width: 50%;
-    margin-left: 46%;
     padding: 25px;
     
     h1 {
@@ -19,5 +19,71 @@
     }
   }
   
+  .mobileOnly {
+    display: none;
+  }
 }
+
+@media only screen and (max-width : 1075px) {
+
+  .section_h1 {
+    background: none;
+    display: flex;
+    min-height: 53vh;
+  
+    .decorativeH1 {
+      width: 70%;
+    }
+
+    .mobileOnly {
+      display: flex;
+      width: 30%;
+
+      img {
+        position: relative;
+        object-fit: contain;
+        left: -20px;
+        bottom: -20PX;
+        align-self: flex-end;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width : 500px) {
+
+  .section_h1 {
+    background: none;
+    display: flex;
+    min-height: 53vh;
+  
+    .decorativeH1 {
+      min-width: 75%;
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    .mobileOnly {
+      display: flex;
+      width: 25%;
+
+      img {
+        position: relative;
+        object-fit: contain;
+        left: -20px;
+        bottom: -20PX;
+        align-self: flex-end;
+        width: 100%;
+      }
+    }
+  }
+}
+
 

@@ -10,7 +10,7 @@ const Canvas = () => {
       <img className="w-100" src={main} alt="" />                
       <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
         <h1 className="mt-5 text-center portH1">Where fine art meets fun.</h1>
-        <h3 className="m-5">
+        <h3 className="m-wide">
           Canvas is a multi-player, gamified, interactive art experience in the vain of The Cleveland Museum of Art ARTLENS Gallery exhibits. Canvas pits one to four players against each other to create a sort of exquisite corps of a broken-up piece of fine art.</h3>
       </div>
       <div className="bodyWidth d-flex justify-content-center yellow flip mb-3 mx-auto">
@@ -24,7 +24,7 @@ const Canvas = () => {
         </div>
         <img className="pl-0 portPic" src={sid} alt="" />
       </div>
-      <div className="bodyWidth p-5 my-5 border border-dark">
+      <div className="bodyWidth px-wide py-5 my-5 border border-dark">
         <div>
           <h3 className="mb-4">the challenge:</h3>
           <p className="px-5 py-3">
@@ -44,7 +44,7 @@ const Canvas = () => {
           </ul>
         </div>
       </div>
-      <div className="bodyWidth p-5 my-5 border border-dark">
+      <div className="bodyWidth px-wide py-5 my-5 border border-dark">
         <h3 className="mb-4">
           <i>"Interacting with art is about the only way I can understand it"</i>
         </h3>
@@ -61,7 +61,7 @@ const Canvas = () => {
         </div>
         <img className="pl-0 portPic" src={wall} alt="" />
       </div>
-      <div className="bodyWidth p-5 my-5 border border-dark">
+      <div className="bodyWidth px-wide py-5 my-5 border border-dark">
         <div>
           <h3 className="mb-4">the code:</h3>
           <p className="px-5 py-3">

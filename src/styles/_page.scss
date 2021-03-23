@@ -75,6 +75,11 @@ a:hover,
 }
 /* end Nav / Navlinks / links */
 
+footer {
+  .socials {
+    margin: 3rem;
+  }
+}
 
 /* home */
 
@@ -117,6 +122,14 @@ a:hover,
   background-color: yellow;
 }
 
+.m-wide {
+  margin: 3rem;
+}
+
+.px-wide {
+  padding: 0 3rem;
+}
+
 .bodyWidth {
     width: 85%;
     margin-left:auto;
@@ -145,6 +158,10 @@ a:hover,
   flex-direction: row;
 }
 
+.flip-50 {
+  width: 50%;
+}
+
 .cover {
   object-fit: cover;
 }
@@ -156,6 +173,7 @@ a:hover,
   font-size: 1.5rem;
   font-family: $displayFont;
 }
+ 
 
  /* Video */  
   video {
@@ -177,6 +195,14 @@ a:hover,
 /* end Resume Page */
 
 /* About Page */
+
+.about {
+  min-height: 70vh;
+
+  img {
+    object-fit: contain;
+  }
+}
 
 .aboutWidth {
   width: 39%;
@@ -417,11 +443,22 @@ a:hover,
   flex-direction: column;
 }
 
+.flip-50 {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 }
 
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+
+  footer {
+    .socials {
+      margin: 0 3rem 3rem;
+    }
+  }
 
   .hovereffect h2 {
     font-size: 1rem;
@@ -485,10 +522,31 @@ a:hover,
   .flip{
   flex-direction: column;
 }
+
+.flip-50 {
+  min-width: 100%;
+  max-width: 100%;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 900px) {
+
+  .portH1 /* portofolio h1 */ {
+    font-size: 2rem;
+  }
+
+  .m-wide {
+    margin: 1rem;
+  }
+
+  h3.m-wide {
+    font-size: 1.25rem;
+  }
+
+  .px-wide {
+    padding: 0 1rem;
+  }
 
   .hovereffect h2 {
     font-size: 3rem;
@@ -524,6 +582,9 @@ nav {
   padding: 0;
 }
 
+.otherProjects .flip {
+  align-items: center;
+}
 
 .mainH1 {
   font-family: 'Nunito', sans-serif;  
@@ -545,6 +606,11 @@ nav {
 
 .flip{
   flex-direction: column;
+}
+
+.flip-50 {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .widthBlock-50 {

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Social from './Social';
 
 const Footer = () => {
   return (
-    <footer className="d-flex justify-content-between">
+    <footer className="d-flex justify-content-between flip">
       <p className="sans m-5">&copy; lindsay mulhollen 2018 - {new Date().getFullYear()}</p>
-      <Link className="sans m-5" to="/Myspace">pimp my profile.</Link>
+      <div className="d-flex justify-content-center">
+        <Social />
+      </div>
     </footer>
   );
 }

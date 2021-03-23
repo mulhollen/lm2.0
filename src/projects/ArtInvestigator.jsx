@@ -12,7 +12,7 @@ const ArtInvestigator = () => {
       <Video video="https://firebasestorage.googleapis.com/v0/b/lm-personal-site.appspot.com/o/Art-Investigator-Vid.mp4?alt=media&token=c75b8964-e397-4c69-b8b8-862549f8b109" />                
         <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
           <h1 className="mt-5 text-center portH1">What do you call an aligator wearing a vest?</h1>
-          <h3 className="m-5">Learn about art + grow emotional intelligence the fun way. Art Investigator is an accompaninment app for The Frist Museum's <i>Feat.</i> exhibit by Nick Cave. Focusing on building emotional intelligence, interest in art, and creating points of interaction for children ages 7 to 11 and their grown-up.</h3>
+          <h3 className="m-wide">Learn about art + grow emotional intelligence the fun way. Art Investigator is an accompaninment app for The Frist Museum's <i>Feat.</i> exhibit by Nick Cave. Focusing on building emotional intelligence, interest in art, and creating points of interaction for children ages 7 to 11 and their grown-up.</h3>
         </div>
         <div className="bodyWidth d-flex justify-content-center yellow mb-3 mx-auto flip">
           <div>
@@ -25,7 +25,7 @@ const ArtInvestigator = () => {
           </div>
           <img className="pl-0 portPic" src={challenge} alt="" />
         </div>
-        <div className="bodyWidth p-5 my-5 border border-dark">
+        <div className="bodyWidth px-wide py-5 my-5 border border-dark">
           <div>
             <h3 className="mb-4">the challenge:</h3>
             <p className="px-5 py-3">
@@ -47,7 +47,7 @@ const ArtInvestigator = () => {
             </ul>
           </div>
         </div>
-        <div className="bodyWidth p-5 my-5 border border-dark">
+        <div className="bodyWidth px-wide py-5 my-5 border border-dark">
             <h3 className="mb-4">
             <i>"Olivia CANNOT stop talking about [Art Investigator]. She came into my bed last night and said she was so happy that she saw how someone else faced their fears. We got to have a great conversation about fears and power!"</i>
             </h3>
@@ -67,7 +67,7 @@ const ArtInvestigator = () => {
           </div>
           <img className="pl-0 portPic" src={soundsuit} alt="" />
         </div>
-        <div className="bodyWidth p-5 my-5 border border-dark">
+        <div className="bodyWidth px-wide py-5 my-5 border border-dark">
           <div>
             <h3 className="mb-4">the code:</h3>
             <p className="px-5 py-3">

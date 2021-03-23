@@ -12,7 +12,7 @@ const HstreamStore = () => {
         <Video video="https://firebasestorage.googleapis.com/v0/b/lm-personal-site.appspot.com/o/hstreamstorewalkthrough.mp4?alt=media&token=fba5482c-b21e-4c31-b926-92504f46ca20" />                
         <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
           <h1 className="mt-5 text-center portH1">Improving the quality of healthcare by developing the people who deliver care</h1>
-          <h3 className="m-5">Modern React update enabling B2B and B2C transactions of courses in continuing healthcare education. Utilizing headless CMS Znode, I worked as one of two React developers architecting and building the site over a four-month zero-to-release period.</h3>
+          <h3 className="m-wide">Modern React update enabling B2B and B2C transactions of courses in continuing healthcare education. Utilizing headless CMS Znode, I worked as one of two React developers architecting and building the site over a four-month zero-to-release period.</h3>
         </div>
         <div className="bodyWidth d-flex justify-content-center yellow mb-3 mx-auto flip">
           <div className="widthBlock-50">
@@ -46,7 +46,7 @@ const HstreamStore = () => {
         <div className="bodyWidth p-5 my-5 border border-dark">
           <div>
             <h3 className="mb-4">lessons learned:</h3>
-            <ul className="px-5 py-3">
+            <ul className="px-wide py-3">
               <li>Creating streamlined components for reuse can only save you time to a point. Don’t sink your costs when it would be quicker to rewrite.</li>
               <li>Sometimes no one knows the answer to the ticket you’re assigned and not knowing how to solve something from the start is okay and happens to everyone.</li>
               <li>It’s really fun to make a product that makes things better for the user.</li>
@@ -58,7 +58,7 @@ const HstreamStore = () => {
         <div className="bodyWidth d-flex justify-content-center yellow flip my-3 mx-auto">
           <div className="pl-5 widthBlock-50">
             <h3 className="pt-5 mb-4">the tech stack:</h3>
-            <ul className="px-5 py-3">
+            <ul className="px-wide py-3">
               <li>React</li>
               <li>React Context API</li>
               <li>React Hooks</li>

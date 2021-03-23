@@ -1,49 +1,23 @@
 import React from 'react';
+import { Accordion, AccordionItem } from 'react-light-accordion';
+import 'react-light-accordion/demo/css/index.css';
+import ContactLinks from './ContactLinks';
 
 const Content = () => {
-  const sadface = ":(";
   return (
-    <div className="myspace__contact mb-4 mx-3">
-      <h3 className="mb-0 pt-1 text-light">Contacting Lindsay</h3>
-      <div className="d-flex px-2">
-        <div className="d-flex flex-column w-50">
-          <a href={`mailto:lindsaymulhollen@gmail.com`} className="pb-1">
-            <img src="https://static.spacehey.net/icons/comment.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Comment&quot; Icon" />
-            Send Message
-          </a>
-          <a href="https://www.linkedin.com/in/mulhollen/" target="_blank" rel="noreferrer" className="pb-1">
-          <img src="https://static.spacehey.net/icons/add.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Add&quot; Icon" />
-            Add to Friends
-          </a>
-          <a href={`mailto:lindsaymulhollen@gmail.com`} className="pb-1">
-          <img src="https://static.spacehey.net/icons/email.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Email&quot; Icon" />
-            Instant Message
-          </a>
-          <a href="https://www.linkedin.com/in/mulhollen/" target="_blank" rel="noreferrer" className="pb-1">
-          <img src="https://static.spacehey.net/icons/group_add.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Group_add&quot; Icon" />
-            Add to Group
-          </a>
-        </div>
-        <div className="d-flex flex-column w-50">
-          <button className="pb-1" onClick={() => {navigator.clipboard.writeText("lindsaymulhollen.com")}}>
-          <img src="https://static.spacehey.net/icons/arrow_right.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Arrow_right&quot; Icon" />
-            Forward to Friend
-          </button>
-          <a href="https://www.linkedin.com/in/mulhollen/" target="_blank" rel="noreferrer" className="pb-1">
-          <img src="https://static.spacehey.net/icons/award_star_add.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Award_star_add&quot; Icon" />
-            Add to Favorites
-          </a>
-          <button className="pb-1" onClick={() => {alert(`${sadface}`)}}>
-          <img src="https://static.spacehey.net/icons/exclamation.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Exclamation&quot; Icon" />
-            Block User
-          </button>
-          <a href="https://www.linkedin.com/in/mulhollen/" target="_blank" rel="noreferrer" className="pb-1">
-          <img src="https://static.spacehey.net/icons/flag_red.png" className="mr-1" aria-hidden="true" loading="lazy" alt="&quot;Flag_red&quot; Icon" />
-            Rank User
-          </a>
-        </div>
+    <>
+      <div className="myspace__contact mb-4 mx-3 desktop-only">
+        <h3 className="mb-0 pt-1 text-light">Contacting Lindsay</h3>   
+        <ContactLinks />   
       </div>
-    </div>
+      <div className="myspace__contact mb-4 mx-3 mobile-only">
+        <Accordion atomic={true}>
+          <AccordionItem title="Contacting Lindsay">
+            <ContactLinks />
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </>
   );
 }
 

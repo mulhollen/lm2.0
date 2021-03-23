@@ -11,7 +11,7 @@ const EverythingHappens = () => {
       <img className="w-100" src={main} alt="" />
       <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
         <h1 className="mt-5 text-center portH1">Ideally, where do you see yourself in five years?</h1>
-        <h3 className="m-5">A collaborative dance + interactive media piece that looks into hopes, dreams, and post-collegiate dissonance. Using research to inspire choreography, video production,  and set design,  <i>Everything Happens</i> was a live concert work of integrated media design and modern dance.</h3>
+        <h3 className="m-wide">A collaborative dance + interactive media piece that looks into hopes, dreams, and post-collegiate dissonance. Using research to inspire choreography, video production,  and set design,  <i>Everything Happens</i> was a live concert work of integrated media design and modern dance.</h3>
       </div>
       <div className="bodyWidth d-flex justify-content-center yellow flip mb-3 mx-auto">
         <img className="pl-0 portPic" src={interview} alt="" />
@@ -26,7 +26,7 @@ const EverythingHappens = () => {
               </p>
           </div>
       </div>
-      <div className="bodyWidth p-5 my-5 border border-dark">
+      <div className="bodyWidth px-wide py-5 my-5 border border-dark">
         <div>
           <h3 className="mb-4">the process:</h3>
           <p className="px-5 py-3">
@@ -51,8 +51,8 @@ const EverythingHappens = () => {
         </div>
         <img className="pl-0 portPic" src={ellyn} alt="" />
       </div>
-      <div className="bodyWidth p-5 my-5 border border-dark">
-        <div><iframe title="Everything Happens Live Video" src="https://player.vimeo.com/video/44778305?title=0&byline=0&portrait=0"></iframe></div>
+      <div className="bodyWidth mx-auto py-5 px-1 my-5 border border-dark">
+        <iframe title="Everything Happens Live Video" src="https://player.vimeo.com/video/44778305?title=0&byline=0&portrait=0" />
       </div>
       <img className="w-100 mt-5" src={trio} alt="" />
       <OtherProjects current="EverythingHappens" />
