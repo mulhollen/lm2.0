@@ -18,6 +18,24 @@ p {
 //   font-family: 'Nunito', sans-serif;
 // }
 
+main#main > div {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+main#main > div.app__main--proj {
+  max-width: 100vw;
+  min-width: 100vw;
+
+  .bodyWidth {
+    max-width: 1400px;
+  }
+}
+
+.portfolioImg {
+  max-width: 50%;
+}
+
 .sans {
   font-family: 'Work Sans', monospace;  
 }

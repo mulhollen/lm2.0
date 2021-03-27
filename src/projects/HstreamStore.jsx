@@ -8,8 +8,8 @@ import OtherProjects from "../shared/OtherProjects";
 
 const HstreamStore = () => {
   return (
-      <div>
-        <Video video="https://firebasestorage.googleapis.com/v0/b/lm-personal-site.appspot.com/o/hstreamstorewalkthrough.mp4?alt=media&token=fba5482c-b21e-4c31-b926-92504f46ca20" />                
+      <div className="app__main--proj">
+        <Video video="https://firebasestorage.googleapis.com/v0/b/lm-personal-site.appspot.com/o/StoreWalkThrough_sm.mp4?alt=media&token=1df0bdfe-cada-4f82-a491-29955843c86c" />                
         <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
           <h1 className="mt-5 text-center portH1">Improving the quality of healthcare by developing the people who deliver care</h1>
           <h3 className="m-wide">Modern React update enabling B2B and B2C transactions of courses in continuing healthcare education. Utilizing headless CMS Znode, I worked as one of two React developers architecting and building the site over a four-month zero-to-release period.</h3>

@@ -8,7 +8,7 @@ import OtherProjects from "../shared/OtherProjects";
 
 const ArtInvestigator = () => {
   return (
-    <div>
+    <div className="app__main--proj">
       <Video video="https://firebasestorage.googleapis.com/v0/b/lm-personal-site.appspot.com/o/Art-Investigator-Vid.mp4?alt=media&token=c75b8964-e397-4c69-b8b8-862549f8b109" />                
         <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
           <h1 className="mt-5 text-center portH1">What do you call an aligator wearing a vest?</h1>

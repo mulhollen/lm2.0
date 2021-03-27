@@ -26,7 +26,7 @@ const Portfolio = () => {
               </p>
               <i className="text-muted mt-5"> React - React Context API - React Hooks - Sass - Reactstrap - znode - Airbnb Prettier + ESLint - Enzyme - Jest</i>
             </div>
-            <img className="pl-0  filp-50" src={Hstream} alt="Laptop computer opened to a healthcare education marketplace website with a banner for covid education" />
+            <img className="pl-0  filp-50 portfolioImg" src={Hstream} alt="Laptop computer opened to a healthcare education marketplace website with a banner for covid education" />
           </div>
         </Link>
         <img src={Squiggle} className="portfolioContent__lineBreak" alt=" " />
@@ -39,7 +39,7 @@ const Portfolio = () => {
               </p>
               <i className="text-muted mt-5"> CRUD Application - Firebase - Firebase Storage Bucket - Jquery - Sass - Bootstrap</i>
             </div>
-            <img className="pl-0  filp-50" src={AI} alt="iPad view of Art Investigator App home page with aligator illustration and buttons to get started" />
+            <img className="pl-0  filp-50 portfolioImg" src={AI} alt="iPad view of Art Investigator App home page with aligator illustration and buttons to get started" />
           </div>
         </Link>
         <img src={Squiggle} className="portfolioContent__lineBreak" alt=" " />
@@ -52,7 +52,7 @@ const Portfolio = () => {
               </p>
               <i className="text-muted mt-5"> React - Firebase - Rebase - Local Storage - React Canvas Draw - React Color - React Router Dom - Bootstrap</i>
             </div>
-            <img className="pl-0  filp-50" src={CanvasImg} alt="graphic of painters pallet with the word canvas" />
+            <img className="pl-0  filp-50 portfolioImg" src={CanvasImg} alt="graphic of painters pallet with the word canvas" />
           </div>
         </Link>
         <img src={Squiggle} className="portfolioContent__lineBreak" alt=" " />
@@ -65,7 +65,7 @@ const Portfolio = () => {
                 </p>
                 <i className="text-muted mt-5">Media Design - Stage Managing - Set Design - Video Production in Avid Media Composer & Adobe After Effects - Lighting Design</i>
             </div>
-            <img className="pl-0  filp-50" src={EverythingHappens} alt="Modern dancer in standing position with arms bent and raised, seated dancers and projections screens in background." />
+            <img className="pl-0  filp-50 portfolioImg" src={EverythingHappens} alt="Modern dancer in standing position with arms bent and raised, seated dancers and projections screens in background." />
           </div>
         </Link>
       </div>

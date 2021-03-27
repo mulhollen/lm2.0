@@ -6,7 +6,7 @@ import OtherProjects from "../shared/OtherProjects";
 
 const Canvas = () => {
   return (
-    <div>
+    <div className="app__main--proj">
       <img className="w-100" src={main} alt="" />                
       <div className="d-flex justify-content-center flex-column port-h1 bodyWidth">
         <h1 className="mt-5 text-center portH1">Where fine art meets fun.</h1>
