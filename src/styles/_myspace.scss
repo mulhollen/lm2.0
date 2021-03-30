@@ -204,6 +204,7 @@ $text-orange: #E06E36;
   }
   .desktop-only {
     display: flex;
+    flex-direction: column;
   }
 
   .accordion {
