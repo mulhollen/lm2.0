@@ -1,5 +1,5 @@
 {
-  "homepage": "http://mulhollen.github.io/lm2.0",
+  "homepage": "/lm-personal-site-static-react",
   "name": "lm-jsx",
   "version": "0.1.0",
   "private": true,
@@ -31,7 +31,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "/lm-personal-site-static-react",
   "eslintConfig": {
     "extends": [
       "react-app",
